@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
     background: whitesmoke;
-    /*font-family: 'Varela Round', sans-serif;*/
     font-family: 'Arial', sans-serif;
 }
 .fa-home {
@@ -18,18 +17,7 @@ body {
     padding: 2px;
     height: max-content;
 }
-.wrapper1 {
-    display: flex;
-    width: 44vw;
-    height: 40vh;
-    background: linear-gradient(#1DB1D4, #90D2DE);
-    padding: 20px 5px 0 3px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 20px #ccc;
-    margin: 30px;
-    position: relative;
-}
-.wrapper2 {
+.wrapper {
     display: flex;
     width: 44vw;
     height: 40vh;
@@ -40,6 +28,7 @@ body {
     box-shadow: 5px 5px 20px #ccc;
     margin: 30px;
     position: relative;
+    overflow: hidden;
 }
 .modalMock {
     width: 19%;
@@ -66,24 +55,7 @@ body {
     margin-right: 8px;
     margin-top: -45px;
 }
-.timer1 {
-    width: 17%;
-    height: max-content;
-    background: rgba(15, 27, 69, .25);
-    border-radius: 5px;
-    border: 2px solid white;
-    box-shadow: 4px 4px 20px #fff;
-    clear: both;
-    position: absolute;
-    right: 14px;
-    bottom: 90px;
-    padding: 5px;
-    font-family: 'Orbitron', sans-serif;
-    color: lime;
-    text-transform: uppercase;
-    text-align: center;
-}
-.timer2 {
+.timer {
     width: 20%;
     height: max-content;
     background: rgba(15, 27, 69, .25);
