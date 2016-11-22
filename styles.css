@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    /*font-family: 'Varela Round', sans-serif;*/
+    font-family: 'Arial', sans-serif;
+}
+.fa-home {
+    margin-left: 6px;
+    margin-top: -10px;
+    font-size: 26px;
+    color: #CEE9F2;
+    background: rgba(15, 27, 69, .2);
+    border-radius: 3px;
+    padding: 2px;
+    height: max-content;
+}
+.wrapper1 {
+    display: flex;
+    width: 44vw;
+    height: 40vh;
+    background: linear-gradient(#1DB1D4, #90D2DE);
+    padding: 20px 5px 0 3px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #ccc;
+    margin: 30px;
+    position: relative;
+}
+.wrapper2 {
+    display: flex;
+    width: 44vw;
+    height: 40vh;
+    background: url('assets/sbbk.png') center center no-repeat;
+    background-size: cover;
+    padding: 20px 5px 0 3px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #ccc;
+    margin: 30px;
+    position: relative;
+}
+.modalMock {
+    width: 19%;
+    height: max-content;
+    background: rgba(15, 27, 69, .25);
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 5px 5px 20px #fff;
+    clear: both;
+    position: relative;
+    padding: 0 12px;
+    margin-right: 5px;
+    margin-top: -5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.usmock {
+    background: url('assets/usamck.png') center center no-repeat;
+    background-size: contain;
+    height: 130%;
+    width: 100%;
+    margin-left: -35px;
+    margin-right: 8px;
+    margin-top: -45px;
+}
+.timer1 {
+    width: 17%;
+    height: max-content;
+    background: rgba(15, 27, 69, .25);
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 4px 4px 20px #fff;
+    clear: both;
+    position: absolute;
+    right: 14px;
+    bottom: 90px;
+    padding: 5px;
+    font-family: 'Orbitron', sans-serif;
+    color: lime;
+    text-transform: uppercase;
+    text-align: center;
+}
+.timer2 {
+    width: 20%;
+    height: max-content;
+    background: rgba(15, 27, 69, .25);
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 4px 4px 20px #fff;
+    clear: both;
+    position: absolute;
+    right: 12px;
+    bottom: 65px;
+    padding: 5px;
+    font-family: 'Orbitron', sans-serif;
+    color: lime;
+    text-transform: uppercase;
+    text-align: center;
+}
+.gemIcon {
+    background: url('http://icons.iconarchive.com/icons/aha-soft/jewelry/256/Gem-icon.png') center no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    clear: both;
+    position: absolute;
+    right: 125px;
+    bottom: 10px;
+}
+.points {
+    width: 120px;
+    height: 20px;
+    clear: both;
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Happy Monkey', cursive;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
