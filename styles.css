@@ -17,7 +17,14 @@ body {
     padding: 2px;
     height: max-content;
 }
-.wrapper {
+#landingHomeIcon {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    z-index: 99999;
+    background: rgba(244, 255, 255, .3);
+}
+.landingWrapper {
     display: flex;
     width: 44vw;
     height: 40vh;
@@ -30,69 +37,143 @@ body {
     position: relative;
     overflow: hidden;
 }
-.modalMock {
-    width: 19%;
-    height: max-content;
-    background: rgba(15, 27, 69, .25);
+.wrapper {
+    display: flex;
+    width: 44vw;
+    height: 40vh;
+    background: url('assets/sbbk.png') center center no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #ccc;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.landingMap {
+    background: url('assets/usamck.png') center center no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    margin-left: -35px;
+    margin-right: 8px;
+    margin-top: 0px;
+    position: absolute;
+}
+.landingModal {
+    width: 100%;
+    height: 50%;
+    background: rgba(15, 27, 69, .65);
     border-radius: 5px;
     border: 5px solid white;
     box-shadow: 5px 5px 20px #fff;
-    clear: both;
     position: relative;
-    padding: 0 12px;
-    margin-right: 5px;
-    margin-top: -5px;
+    z-index: 9999;
+    padding: 45px;
+    margin: 10px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.landingModal button {
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(0, 255, 0, .6);
+    text-transform: uppercase;
+    height: 25px;
+    length: 100px;
+}
+.landingModal button:hover {
+    background-color: lime;
+}
+.region1, .region2, .region3 {
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin-top: 0;
+}
+.modalWrapper, .modalWrapper2, .modalWrapper3 {
+    background: rgba(15, 27, 69, .65);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 23%;
+    padding: 6px;
+    display: none;
+}
+.modalMock {
+    width: 100%;
+    height: max-content;
+    background: rgba(15, 27, 69, .25);
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 5px solid white;
+    box-shadow: 5px 5px 20px #fff;
+    padding: 0 5px 0px 15px;
     color: white;
     text-transform: uppercase;
     font-size: 15px;
 }
-.usmock {
-    background: url('assets/usamck.png') center center no-repeat;
-    background-size: contain;
-    height: 130%;
-    width: 100%;
-    margin-left: -35px;
-    margin-right: 8px;
-    margin-top: -45px;
+.modalMock select {
+    margin-top: 5px;
 }
 .timer {
-    width: 20%;
+    width: 100%;
     height: max-content;
+    box-sizing: border-box;
     background: rgba(15, 27, 69, .25);
     border-radius: 5px;
-    border: 2px solid white;
+    border: 5px solid white;
     box-shadow: 4px 4px 20px #fff;
-    clear: both;
-    position: absolute;
-    right: 12px;
-    bottom: 65px;
     padding: 5px;
     font-family: 'Orbitron', sans-serif;
     color: lime;
     text-transform: uppercase;
     text-align: center;
 }
+.scoreWrapper {
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+}
 .gemIcon {
     background: url('http://icons.iconarchive.com/icons/aha-soft/jewelry/256/Gem-icon.png') center no-repeat;
     background-size: cover;
     width: 20px;
     height: 20px;
-    clear: both;
-    position: absolute;
-    right: 125px;
-    bottom: 10px;
+    float: left;
+    margin: 0;
+    padding: 0;
 }
-.points {
-    width: 120px;
+.points, .points2, .points3 {
+    width: auto;
     height: 20px;
-    clear: both;
-    position: absolute;
-    right: 5px;
-    bottom: 2px;
-    padding: 5px;
+    padding-left: 5px;
+    float: left;
     font-size: 16px;
     font-family: 'Happy Monkey', cursive;
     color: white;
     text-transform: uppercase;
     text-align: center;
+}
+.pin {
+    background: url(https://cdn.goconqr.com/uploads/image_clipping/image/75550/flag_pin_angled_400_clr_9655.png) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 999999;
+    left: 230px;
+    top: 55px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    display: none;
 }
