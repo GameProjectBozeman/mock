@@ -1,3 +1,5 @@
 node_modules
 .DS_Store
-passport.js    
+passport.js
+mock
+myApp
